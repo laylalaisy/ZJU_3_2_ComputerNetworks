@@ -1,8 +1,6 @@
 
 # ZJU_Computer Networks
 
-
-Check each branch to see each project.
 ## Courese Information：
 1. Course: Computer Networks in ZJU 
 2. Time: 2018/03/01 - 2018/07/01 
@@ -13,7 +11,6 @@ Check each branch to see each project.
 2. See each program under different branches. It involves requirement, source code instruction and final report of each program .
 
 ## Lab Catalog
-You can check each branch to get further information.
 1. P1: WireShark
 2. P2: Socket
 3. P3：HTTP
