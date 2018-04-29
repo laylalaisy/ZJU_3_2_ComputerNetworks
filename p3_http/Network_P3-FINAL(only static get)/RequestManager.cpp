@@ -182,7 +182,7 @@ void HandlePost(int connfd, char * uri, rio_t* rio)
 {
 	char buf[MAX_LINE]; 
 	bool log = false;
-	if (strcasecmp(uri, "/html/dopost"))
+	if (strcasecmp(uri, "/html/dopost") || strcasecmp(uri, "/dopost"))
 	{
 		iClient_error(connfd, "404",  "Not found", "This kind of resource is not available in this server");
 		return;
