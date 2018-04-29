@@ -154,7 +154,7 @@ static void read_requesthdrs(rio_t *rp){
 static void parse_uri(char *uri, char *filename){
 	char *ptr;
 
-	strcpy(filename, ".");					// begin convert
+	strcpy(filename, "./dir");					// begin convert
 	strcat(filename, uri);					// end convert
 	if(uri[strlen(uri)-1] == '/'){			// slash check：if '/', show default file
 		strcat(filename, "html/test.html");	// append default
@@ -182,7 +182,7 @@ void HandlePost(int connfd, char * uri, rio_t* rio)
 {
 	char buf[MAX_LINE]; 
 	bool log = false;
-	if (strcasecmp(uri, "/html/dopost") || strcasecmp(uri, "/dopost"))
+	if (strcasecmp(uri, "/html/dopost") && strcasecmp(uri, "/dopost"))
 	{
 		iClient_error(connfd, "404",  "Not found", "This kind of resource is not available in this server");
 		return;
