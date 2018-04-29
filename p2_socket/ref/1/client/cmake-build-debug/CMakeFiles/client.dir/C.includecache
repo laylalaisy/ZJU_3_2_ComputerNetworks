@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/laylalaisyc/Desktop/client/client.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+netinet/in.h
+-
+errno.h
+-
+arpa/inet.h
+-
+zconf.h
+-
+
